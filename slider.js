@@ -11,7 +11,7 @@ const slideWidth = slider.clientWidth;
 function nextBtn() {
     slideIndex++;
 
-    if (slideIndex > 5) {
+    if (slideIndex > 9) {
         slideIndex = 0; 
     }
 
@@ -22,7 +22,7 @@ function PrevBtn() {
     slideIndex--;
 
     if (slideIndex < 0) {
-        slideIndex = 5
+        slideIndex = 9
     }
 
     slides.style.transform = `translateX(-${slideWidth * slideIndex}px)`
